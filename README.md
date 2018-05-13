@@ -2,7 +2,9 @@
 
 卷积神经网络&&爬虫实现网易新闻自动爬取并分类
 
+采用THUCnews全部数据集进行训练，效果如下。 详细实现见./text_classification
 
+![](http://image.i-ll.cc/18-5-13/91609560.jpg)
 
 
 ![](http://image.i-ll.cc/18-5-13/59403725.jpg)
