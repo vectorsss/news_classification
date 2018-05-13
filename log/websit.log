@@ -1,0 +1,590 @@
+[18/Apr/2018 15:34:07] "GET /hotNews/?page=2 HTTP/1.1" 200 7661
+[18/Apr/2018 15:34:17] "GET /static/imgs/banner_hot_news.png HTTP/1.1" 200 836973
+[18/Apr/2018 15:34:19] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:34:19] "GET /articleAnalyze/ HTTP/1.1" 200 10293
+[18/Apr/2018 15:34:36] "GET /static/font/fz.TTF HTTP/1.1" 200 3145340
+[18/Apr/2018 15:35:10] "GET /articleAnalyze/ HTTP/1.1" 200 7952
+[18/Apr/2018 15:35:17] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:35:17] "GET /articleAnalyze/ HTTP/1.1" 200 11252
+[18/Apr/2018 15:36:28] "GET /articleAnalyze/ HTTP/1.1" 200 14223
+[18/Apr/2018 15:36:28] "GET /static/favicon.ico HTTP/1.1" 200 4286
+Internal Server Error: /getArticle/
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/root/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/www/text_classification/web/views.py", line 142, in get_article
+    classify = sen_info(text)  # 通过tcp传输文字 并获取返回的分类。
+  File "/home/www/text_classification/web/client.py", line 9, in sen_info
+    recvdata=s.recv(buffsize).decode('utf-8')
+ConnectionResetError: [Errno 104] Connection reset by peer
+[18/Apr/2018 15:36:45] "POST /getArticle/ HTTP/1.1" 500 98208
+[18/Apr/2018 15:36:46] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:36:46] "GET /articleAnalyze/ HTTP/1.1" 200 7801
+[18/Apr/2018 15:36:57] "GET /articleAnalyze/ HTTP/1.1" 200 7952
+[18/Apr/2018 15:36:57] "GET /static/css/main.css HTTP/1.1" 200 1919
+[18/Apr/2018 15:36:57] "GET /static/js/articleAnalyze.js HTTP/1.1" 200 14291
+[18/Apr/2018 15:36:57] "GET /static/css/articleAnalyze.css HTTP/1.1" 200 840
+[18/Apr/2018 15:36:57] "GET /static/imgs/button.png HTTP/1.1" 200 25033
+[18/Apr/2018 15:36:57] "GET /static/imgs/wenzi.png HTTP/1.1" 200 26559
+[18/Apr/2018 15:36:57] "GET /static/imgs/Category.png HTTP/1.1" 200 2416
+[18/Apr/2018 15:37:02] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:37:02] "GET /articleAnalyze/ HTTP/1.1" 200 8648
+[18/Apr/2018 15:37:02] "GET /static/imgs/banner_atricle_analyzie.png HTTP/1.1" 200 836649
+[18/Apr/2018 15:37:03] "GET /static/js/articleAnalyze.js HTTP/1.1" 304 0
+[18/Apr/2018 15:37:13] "GET /static/imgs/banner_atricle_analyzie.png HTTP/1.1" 200 836649
+[18/Apr/2018 15:37:15] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:37:15] "GET /articleAnalyze/ HTTP/1.1" 200 8120
+[18/Apr/2018 15:37:16] "GET /static/js/articleAnalyze.js HTTP/1.1" 304 0
+[18/Apr/2018 15:37:22] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:37:22] "GET /articleAnalyze/ HTTP/1.1" 200 11301
+[18/Apr/2018 15:37:22] "GET /static/font/fz.TTF HTTP/1.1" 200 983040
+[18/Apr/2018 15:37:23] "GET /static/js/articleAnalyze.js HTTP/1.1" 304 0
+[18/Apr/2018 15:37:45] "GET /static/font/fz.TTF HTTP/1.1" 200 3145340
+[18/Apr/2018 15:37:46] "GET /static/favicon.ico HTTP/1.1" 200 4286
+[18/Apr/2018 15:37:47] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:37:47] "GET /articleAnalyze/ HTTP/1.1" 200 8628
+[18/Apr/2018 15:37:56] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:37:56] "GET /articleAnalyze/ HTTP/1.1" 200 8670
+[18/Apr/2018 15:38:27] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:38:27] "GET /articleAnalyze/ HTTP/1.1" 200 8569
+[18/Apr/2018 15:38:29] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:38:29] "GET /articleAnalyze/ HTTP/1.1" 200 7187
+[18/Apr/2018 15:38:29] "GET /static/js/articleAnalyze.js HTTP/1.1" 304 0
+[18/Apr/2018 15:39:01] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:39:01] "GET /articleAnalyze/ HTTP/1.1" 200 9161
+[18/Apr/2018 15:39:01] "GET /static/js/articleAnalyze.js HTTP/1.1" 304 0
+[18/Apr/2018 15:39:56] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:39:56] "GET /articleAnalyze/ HTTP/1.1" 200 6270
+[18/Apr/2018 15:39:56] "GET /static/js/articleAnalyze.js HTTP/1.1" 304 0
+Internal Server Error: /getArticle/
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/root/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/www/text_classification/web/views.py", line 142, in get_article
+    classify = sen_info(text)  # 通过tcp传输文字 并获取返回的分类。
+  File "/home/www/text_classification/web/client.py", line 9, in sen_info
+    recvdata=s.recv(buffsize).decode('utf-8')
+ConnectionResetError: [Errno 104] Connection reset by peer
+[18/Apr/2018 15:41:50] "POST /getArticle/ HTTP/1.1" 500 100399
+Not Found: /favicon.ico
+[18/Apr/2018 15:41:50] "GET /favicon.ico HTTP/1.1" 404 2570
+[18/Apr/2018 15:41:50] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:41:51] "GET /articleAnalyze/ HTTP/1.1" 200 6463
+Internal Server Error: /getArticle/
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/root/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/www/text_classification/web/views.py", line 142, in get_article
+    classify = sen_info(text)  # 通过tcp传输文字 并获取返回的分类。
+  File "/home/www/text_classification/web/client.py", line 9, in sen_info
+    recvdata=s.recv(buffsize).decode('utf-8')
+ConnectionResetError: [Errno 104] Connection reset by peer
+[18/Apr/2018 15:42:19] "POST /getArticle/ HTTP/1.1" 500 100399
+[18/Apr/2018 15:42:20] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:42:20] "GET /articleAnalyze/ HTTP/1.1" 200 11402
+[18/Apr/2018 15:42:20] "GET /static/js/articleAnalyze.js HTTP/1.1" 304 0
+[18/Apr/2018 15:44:44] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:44:44] "GET /articleAnalyze/ HTTP/1.1" 200 9953
+[18/Apr/2018 15:45:55] "GET /articleAnalyze/ HTTP/1.1" 200 7952
+[18/Apr/2018 15:45:55] "GET /static/js/articleAnalyze.js HTTP/1.1" 200 27532
+[18/Apr/2018 15:45:55] "GET / HTTP/1.1" 302 0
+[18/Apr/2018 15:45:55] "GET /static/favicon.ico HTTP/1.1" 200 4286
+[18/Apr/2018 15:45:55] "GET /aboutUs/ HTTP/1.1" 200 5296
+[18/Apr/2018 15:45:57] "GET /articleAnalyze/ HTTP/1.1" 200 7952
+[18/Apr/2018 15:46:07] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:46:07] "GET /articleAnalyze/ HTTP/1.1" 200 10019
+[18/Apr/2018 15:47:12] "GET / HTTP/1.1" 302 0
+[18/Apr/2018 15:47:12] "GET /aboutUs/ HTTP/1.1" 200 5296
+[18/Apr/2018 15:47:12] "GET /static/css/aboutUS.css HTTP/1.1" 200 710
+[18/Apr/2018 15:47:12] "GET /static/js/aboutUS.js HTTP/1.1" 200 6
+[18/Apr/2018 15:47:12] "GET /static/imgs/aboutUS.png HTTP/1.1" 200 38529
+[18/Apr/2018 15:47:17] "GET /static/imgs/banner_about_us.png HTTP/1.1" 200 834160
+[18/Apr/2018 15:47:46] "GET /articleAnalyze/ HTTP/1.1" 200 7952
+[18/Apr/2018 15:47:46] "GET /static/js/articleAnalyze.js HTTP/1.1" 200 27492
+[18/Apr/2018 15:47:58] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:47:59] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:47:59] "GET /articleAnalyze/ HTTP/1.1" 200 11513
+[18/Apr/2018 15:47:59] "GET /static/js/articleAnalyze.js HTTP/1.1" 304 0
+[18/Apr/2018 15:48:03] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:48:03] "GET /articleAnalyze/ HTTP/1.1" 200 11558
+[18/Apr/2018 15:48:03] "GET /static/js/articleAnalyze.js HTTP/1.1" 304 0
+[18/Apr/2018 15:48:07] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:48:07] "GET /articleAnalyze/ HTTP/1.1" 200 8648
+[18/Apr/2018 15:48:07] "GET /static/js/articleAnalyze.js HTTP/1.1" 304 0
+[18/Apr/2018 15:48:15] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:48:15] "GET /articleAnalyze/ HTTP/1.1" 200 6339
+[18/Apr/2018 15:48:15] "GET /static/js/articleAnalyze.js HTTP/1.1" 304 0
+[18/Apr/2018 15:48:22] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:48:23] "GET /articleAnalyze/ HTTP/1.1" 200 11468
+[18/Apr/2018 15:48:23] "GET /static/js/articleAnalyze.js HTTP/1.1" 304 0
+[18/Apr/2018 15:48:29] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:48:29] "GET /articleAnalyze/ HTTP/1.1" 200 6339
+[18/Apr/2018 15:48:29] "GET /static/js/articleAnalyze.js HTTP/1.1" 304 0
+[18/Apr/2018 15:48:33] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 15:48:33] "GET /articleAnalyze/ HTTP/1.1" 200 11301
+[18/Apr/2018 15:51:02] "GET /articleAnalyze/ HTTP/1.1" 200 7952
+[18/Apr/2018 15:51:02] "GET /static/favicon.ico HTTP/1.1" 200 4286
+[18/Apr/2018 15:51:05] "GET /articleAnalyze/ HTTP/1.1" 200 7952
+[18/Apr/2018 15:51:15] "GET /articleAnalyze/ HTTP/1.1" 200 7952
+[18/Apr/2018 15:51:16] "GET /articleAnalyze/ HTTP/1.1" 200 7952
+[18/Apr/2018 15:51:17] "GET /articleAnalyze/ HTTP/1.1" 200 7952
+[18/Apr/2018 15:53:27] "GET /static/font/fz.TTF HTTP/1.1" 200 983040
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/root/anaconda3/lib/python3.6/socketserver.py", line 775, in write
+    self._sock.sendall(b)
+TimeoutError: [Errno 110] Connection timed out
+[18/Apr/2018 15:53:27] "GET /static/font/fz.TTF HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('221.11.32.135', 32340)
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/root/anaconda3/lib/python3.6/socketserver.py", line 775, in write
+    self._sock.sendall(b)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/root/anaconda3/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 86, in handle_error
+    super().handle_error()
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/socketserver.py", line 639, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/root/anaconda3/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/root/anaconda3/lib/python3.6/socketserver.py", line 696, in __init__
+    self.handle()
+  File "/root/anaconda3/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 154, in handle
+    handler.run(self.server.get_app())
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/root/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+[18/Apr/2018 16:01:45] "GET /static/imgs/banner_about_us.png HTTP/1.1" 200 442368
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/root/anaconda3/lib/python3.6/socketserver.py", line 775, in write
+    self._sock.sendall(b)
+TimeoutError: [Errno 110] Connection timed out
+[18/Apr/2018 16:01:45] "GET /static/imgs/banner_about_us.png HTTP/1.1" 500 59
+----------------------------------------
+Exception happened during processing of request from ('221.11.32.135', 22703)
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 453, in _write
+    result = self.stdout.write(data)
+  File "/root/anaconda3/lib/python3.6/socketserver.py", line 775, in write
+    self._sock.sendall(b)
+TimeoutError: [Errno 110] Connection timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/root/anaconda3/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 86, in handle_error
+    super().handle_error()
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/socketserver.py", line 639, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/root/anaconda3/lib/python3.6/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/root/anaconda3/lib/python3.6/socketserver.py", line 696, in __init__
+    self.handle()
+  File "/root/anaconda3/lib/python3.6/site-packages/django/core/servers/basehttp.py", line 154, in handle
+    handler.run(self.server.get_app())
+  File "/root/anaconda3/lib/python3.6/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/root/anaconda3/lib/python3.6/wsgiref/simple_server.py", line 35, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+----------------------------------------
+[18/Apr/2018 16:12:37] "GET / HTTP/1.1" 302 0
+[18/Apr/2018 16:12:37] "GET /aboutUs/ HTTP/1.1" 200 5296
+[18/Apr/2018 16:12:37] "GET /static/js/aboutUS.js HTTP/1.1" 200 6
+[18/Apr/2018 16:12:37] "GET /static/css/aboutUS.css HTTP/1.1" 200 710
+[18/Apr/2018 16:12:37] "GET /static/css/main.css HTTP/1.1" 200 1919
+[18/Apr/2018 16:12:37] "GET /static/imgs/aboutUS.png HTTP/1.1" 200 38529
+[18/Apr/2018 16:12:37] "GET /static/imgs/Category.png HTTP/1.1" 200 2416
+[18/Apr/2018 16:12:40] "GET /articleAnalyze/ HTTP/1.1" 200 7952
+[18/Apr/2018 16:12:40] "GET /static/css/articleAnalyze.css HTTP/1.1" 200 840
+[18/Apr/2018 16:12:40] "GET /static/imgs/banner_about_us.png HTTP/1.1" 200 229376
+[18/Apr/2018 16:12:40] "GET /static/imgs/wenzi.png HTTP/1.1" 200 26559
+[18/Apr/2018 16:12:40] "GET /static/js/articleAnalyze.js HTTP/1.1" 200 27492
+[18/Apr/2018 16:12:40] "GET /static/font/fz.TTF HTTP/1.1" 200 311296
+[18/Apr/2018 16:12:40] "GET /static/imgs/button.png HTTP/1.1" 200 25033
+[18/Apr/2018 16:12:47] "GET /static/imgs/banner_atricle_analyzie.png HTTP/1.1" 200 836649
+[18/Apr/2018 16:12:47] "GET /static/favicon.ico HTTP/1.1" 200 4286
+[18/Apr/2018 16:12:56] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 16:12:56] "GET /articleAnalyze/ HTTP/1.1" 200 8648
+[18/Apr/2018 16:13:03] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 16:13:03] "GET /articleAnalyze/ HTTP/1.1" 200 11301
+[18/Apr/2018 16:13:03] "GET /static/font/fz.TTF HTTP/1.1" 200 1179648
+[18/Apr/2018 16:13:14] "POST /getArticle/ HTTP/1.1" 302 0
+[18/Apr/2018 16:13:14] "GET /articleAnalyze/ HTTP/1.1" 200 9281
+[18/Apr/2018 16:13:15] "GET /static/font/fz.TTF HTTP/1.1" 200 1507328
+[18/Apr/2018 16:13:37] "GET /static/font/fz.TTF HTTP/1.1" 200 3145340
+[18/Apr/2018 16:13:58] "GET /aboutUs/ HTTP/1.1" 200 5296
+[18/Apr/2018 16:14:03] "GET /static/imgs/banner_about_us.png HTTP/1.1" 200 834160
+[18/Apr/2018 16:16:46] "GET / HTTP/1.1" 302 0
+[18/Apr/2018 16:16:46] "GET /aboutUs/ HTTP/1.1" 200 5296
+Performing system checks...
+
+System check identified no issues (0 silenced).
+April 18, 2018 - 15:34:07
+Django version 2.0.4, using settings 'myweb.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+12
+{'id': 2447, 'title': '这种钱别碰!男子借18万8个月后要还220万差点丢房', 'time': '2018.04.18  15 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/00/DFKSH26H0001899N.html'}
+12
+{'id': 2448, 'title': '凉城警方通报"鸿茅药酒案":严格依法依规开展工作', 'time': '2018.04.18  15 : 00', 'classify': '游戏', 'url': 'http://news.163.com/18/0418/00/DFKQIKHJ0001899O.html'}
+12
+{'id': 2449, 'title': '俄罗斯军机引欧洲恐慌 北约军机6天4次紧急升空', 'time': '2018.04.18  15 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0417/22/DFKLAFTN00018AOR.html'}
+12
+{'id': 2450, 'title': '星巴克将关闭全美约8000店面 进行反种族歧视培训', 'time': '2018.04.18  15 : 00', 'classify': '娱乐', 'url': 'http://news.163.com/18/0418/04/DFL832M00001899N.html'}
+12
+{'id': 2451, 'title': '美国前总统老布什妻子去世 享年92岁', 'time': '2018.04.18  15 : 00', 'classify': '股票', 'url': 'http://news.163.com/18/0418/07/DFLKG88R0001899O.html'}
+12
+{'id': 2452, 'title': '美国一客机引擎爆炸致1死7伤 乘客险被"吸"出窗外', 'time': '2018.04.18  15 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/00/DFKSLST30001899N.html'}
+12
+{'id': 2453, 'title': '央视记者暗访排污企业遭村里扣押 2名村干部被拘', 'time': '2018.04.18  15 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/09/DFLOKGTF000187VE.html'}
+12
+{'id': 2454, 'title': '国家移民管理局:5月1日起59国人员海南入境游免签', 'time': '2018.04.18  15 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/10/DFLSJU560001899O.html'}
+12
+{'id': 2455, 'title': '清华日晷再遭涂刻 基座"CLASS"被刻成"CEASS"', 'time': '2018.04.18  15 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/02/DFL1BF0F000187VI.html'}
+12
+{'id': 2456, 'title': '白宫否认特朗普金正恩"直接通话":是最高级别会谈', 'time': '2018.04.18  15 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/07/DFLJTA7A0001875O.html'}
+12
+{'id': 2457, 'title': '记得汶川地震"敬礼娃娃"吗?他如今为拍摄者扫墓', 'time': '2018.04.18  15 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/09/DFLOV7F50001875P.html'}
+12
+{'id': 2458, 'title': '网络传销团伙涉案8000万 花3万聘外国人当"董事长"', 'time': '2018.04.18  15 : 00', 'classify': '科技', 'url': 'http://news.163.com/18/0418/02/DFL2T4S50001899N.html'}
+12
+{'id': 2459, 'title': '特朗普为这事"骂了许多脏话" 外媒质疑其对俄承诺', 'time': '2018.04.18  15 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/00/DFKRO4J400018AOQ.html'}
+12
+{'id': 2460, 'title': '奔驰女司机拒检撒泼踹警察 喊话：眼睛别放电！', 'time': '2018.04.18  15 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0331/16/DE86UJF90001899N.html'}
+12
+{'id': 2461, 'title': '被跨省抓捕医生:已做最坏打算 有机会还会写文章', 'time': '2018.04.18  15 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/01/DFL09K030001899N.html'}
+12
+{'id': 2462, 'title': '日媒:朴槿惠换牢房或有特殊待遇 每个月能花6000元', 'time': '2018.04.18  15 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/01/DFKV7N1U0001899N.html'}
+12
+{'id': 2463, 'title': '14岁少年被批评后溺亡 批评者被判赔10万:我不服', 'time': '2018.04.18  15 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/09/DFLQTLS90001875P.html'}
+12
+{'id': 2464, 'title': '山东潍坊一男童坠入百米深井 15个小时后被救出', 'time': '2018.04.18  15 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/01/DFKTI20U0001899N.html'}
+12
+{'id': 2465, 'title': '吐槽鸿茅药酒被抓捕医生走出看守所 已羁押3个月', 'time': '2018.04.18  15 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0417/18/DFK69BE10001875P.html'}
+12
+{'id': 2466, 'title': '男子手滑误将40万转错人 警察帮追回被当"诈骗犯"', 'time': '2018.04.18  15 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0417/20/DFKEI2L30001875P.html'}
+1734
+2005
+3110
+872
+1112
+1063
+1991
+1155
+1155
+1102
+634
+1326
+339
+3598
+402
+3598
+2049
+1676
+1734
+2049
+2049
+2049
+1112
+339
+2049
+339
+1991
+1112
+1991
+1398
+12
+{'id': 2467, 'title': '这种钱别碰!男子借18万8个月后要还220万差点丢房', 'time': '2018.04.18  16 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/00/DFKSH26H0001899N.html'}
+12
+{'id': 2468, 'title': '凉城警方通报"鸿茅药酒案":严格依法依规开展工作', 'time': '2018.04.18  16 : 00', 'classify': '游戏', 'url': 'http://news.163.com/18/0418/00/DFKQIKHJ0001899O.html'}
+12
+{'id': 2469, 'title': '俄罗斯军机引欧洲恐慌 北约军机6天4次紧急升空', 'time': '2018.04.18  16 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0417/22/DFKLAFTN00018AOR.html'}
+12
+{'id': 2470, 'title': '星巴克将关闭全美约8000店面 进行反种族歧视培训', 'time': '2018.04.18  16 : 00', 'classify': '娱乐', 'url': 'http://news.163.com/18/0418/04/DFL832M00001899N.html'}
+12
+{'id': 2471, 'title': '美国前总统老布什妻子去世 享年92岁', 'time': '2018.04.18  16 : 00', 'classify': '股票', 'url': 'http://news.163.com/18/0418/07/DFLKG88R0001899O.html'}
+12
+{'id': 2472, 'title': '美国一客机引擎爆炸致1死7伤 乘客险被"吸"出窗外', 'time': '2018.04.18  16 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/00/DFKSLST30001899N.html'}
+12
+{'id': 2473, 'title': '国家移民管理局:5月1日起59国人员海南入境游免签', 'time': '2018.04.18  16 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/10/DFLSJU560001899O.html'}
+12
+{'id': 2474, 'title': '央视记者暗访排污企业遭村里扣押 2名村干部被拘', 'time': '2018.04.18  16 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/09/DFLOKGTF000187VE.html'}
+12
+{'id': 2475, 'title': '记得汶川地震"敬礼娃娃"吗?他如今为拍摄者扫墓', 'time': '2018.04.18  16 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/09/DFLOV7F50001875P.html'}
+12
+{'id': 2476, 'title': '清华日晷再遭涂刻 基座"CLASS"被刻成"CEASS"', 'time': '2018.04.18  16 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/02/DFL1BF0F000187VI.html'}
+12
+{'id': 2477, 'title': '白宫否认特朗普金正恩"直接通话":是最高级别会谈', 'time': '2018.04.18  16 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/07/DFLJTA7A0001875O.html'}
+12
+{'id': 2478, 'title': '网络传销团伙涉案8000万 花3万聘外国人当"董事长"', 'time': '2018.04.18  16 : 00', 'classify': '科技', 'url': 'http://news.163.com/18/0418/02/DFL2T4S50001899N.html'}
+12
+{'id': 2479, 'title': '特朗普为这事"骂了许多脏话" 外媒质疑其对俄承诺', 'time': '2018.04.18  16 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/00/DFKRO4J400018AOQ.html'}
+12
+{'id': 2480, 'title': '14岁少年被批评后溺亡 批评者被判赔10万:我不服', 'time': '2018.04.18  16 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/09/DFLQTLS90001875P.html'}
+12
+{'id': 2481, 'title': '被跨省抓捕医生:已做最坏打算 有机会还会写文章', 'time': '2018.04.18  16 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/01/DFL09K030001899N.html'}
+12
+{'id': 2482, 'title': '奔驰女司机拒检撒泼踹警察 喊话：眼睛别放电！', 'time': '2018.04.18  16 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0331/16/DE86UJF90001899N.html'}
+12
+{'id': 2483, 'title': '日媒:朴槿惠换牢房或有特殊待遇 每个月能花6000元', 'time': '2018.04.18  16 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/01/DFKV7N1U0001899N.html'}
+12
+{'id': 2484, 'title': '美媒:美国务卿提名人现任CIA局长访朝与金正恩会面', 'time': '2018.04.18  16 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/08/DFLN8JCT000187VE.html'}[18/Apr/2018 16:16:48] "GET /hotNews/ HTTP/1.1" 200 7381
+[18/Apr/2018 16:16:48] "GET /static/css/hotNews.css HTTP/1.1" 200 1744
+[18/Apr/2018 16:16:48] "GET /static/imgs/line.png HTTP/1.1" 200 19632
+[18/Apr/2018 16:16:53] "GET /static/imgs/banner_hot_news.png HTTP/1.1" 200 836973
+[18/Apr/2018 18:44:24] "GET / HTTP/1.1" 302 0
+[18/Apr/2018 18:44:24] "GET /aboutUs/ HTTP/1.1" 200 5296
+[18/Apr/2018 18:44:24] "GET /static/css/aboutUS.css HTTP/1.1" 200 710
+[18/Apr/2018 18:44:24] "GET /static/js/aboutUS.js HTTP/1.1" 200 6
+[18/Apr/2018 18:44:24] "GET /static/imgs/aboutUS.png HTTP/1.1" 200 38529
+[18/Apr/2018 18:44:28] "GET /static/imgs/banner_about_us.png HTTP/1.1" 200 834160
+[18/Apr/2018 18:44:31] "GET /hotNews/ HTTP/1.1" 200 7370
+[18/Apr/2018 18:44:31] "GET /static/css/hotNews.css HTTP/1.1" 200 1744
+[18/Apr/2018 18:44:31] "GET /static/imgs/line.png HTTP/1.1" 200 19632
+[18/Apr/2018 18:44:36] "GET /static/imgs/banner_hot_news.png HTTP/1.1" 200 836973
+
+12
+{'id': 2485, 'title': '情侣吵架女方要男友下跪认错 男友:跪了能分手吗?', 'time': '2018.04.18  16 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/09/DFLPVMUM0001875P.html'}
+12
+{'id': 2486, 'title': '山东潍坊一男童坠入百米深井 15个小时后被救出', 'time': '2018.04.18  16 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/01/DFKTI20U0001899N.html'}
+12
+{'id': 2507, 'title': '这种钱别碰!男子借18万8个月后要还220万差点丢房', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/00/DFKSH26H0001899N.html'}
+12
+{'id': 2508, 'title': '记得汶川地震"敬礼娃娃"吗?他如今为拍摄者扫墓', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/09/DFLOV7F50001875P.html'}
+12
+{'id': 2509, 'title': '国家移民管理局:5月1日起59国人员海南入境游免签', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/10/DFLSJU560001899O.html'}
+12
+{'id': 2510, 'title': '星巴克将关闭全美约8000店面 进行反种族歧视培训', 'time': '2018.04.18  18 : 00', 'classify': '娱乐', 'url': 'http://news.163.com/18/0418/04/DFL832M00001899N.html'}
+12
+{'id': 2511, 'title': '央视记者暗访排污企业遭村里扣押 2名村干部被拘', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/09/DFLOKGTF000187VE.html'}
+12
+{'id': 2512, 'title': '美国前总统老布什妻子去世 享年92岁', 'time': '2018.04.18  18 : 00', 'classify': '股票', 'url': 'http://news.163.com/18/0418/07/DFLKG88R0001899O.html'}
+12
+{'id': 2513, 'title': '凉城警方通报"鸿茅药酒案":严格依法依规开展工作', 'time': '2018.04.18  18 : 00', 'classify': '游戏', 'url': 'http://news.163.com/18/0418/00/DFKQIKHJ0001899O.html'}
+12
+{'id': 2514, 'title': '情侣吵架女方要男友下跪认错 男友:跪了能分手吗?', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/09/DFLPVMUM0001875P.html'}
+12
+{'id': 2515, 'title': '俄罗斯军机引欧洲恐慌 北约军机6天4次紧急升空', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0417/22/DFKLAFTN00018AOR.html'}
+12
+{'id': 2516, 'title': '美国一客机引擎爆炸致1死7伤 乘客险被"吸"出窗外', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/00/DFKSLST30001899N.html'}
+12
+{'id': 2517, 'title': '被跨省抓捕医生将回家 律师:鸿茅药酒派人参与抓捕', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/10/DFLSDNEK0001875P.html'}
+12
+{'id': 2518, 'title': '14岁少年被批评后溺亡 批评者被判赔10万:我不服', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/09/DFLQTLS90001875P.html'}
+12
+{'id': 2519, 'title': '白宫否认特朗普金正恩"直接通话":是最高级别会谈', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/07/DFLJTA7A0001875O.html'}
+12
+{'id': 2520, 'title': '网络传销团伙涉案8000万 花3万聘外国人当"董事长"', 'time': '2018.04.18  18 : 00', 'classify': '科技', 'url': 'http://news.163.com/18/0418/02/DFL2T4S50001899N.html'}
+12
+{'id': 2521, 'title': '避免与大陆军演对垒?台军火炮实弹演习紧急喊停', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/11/DFM1O1VU0001875N.html'}
+12
+{'id': 2522, 'title': '美媒:美国务卿提名人现任CIA局长访朝与金正恩会面', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/08/DFLN8JCT000187VE.html'}
+12
+{'id': 2523, 'title': '奔驰女司机拒检撒泼踹警察 喊话：眼睛别放电！', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0331/16/DE86UJF90001899N.html'}
+12
+{'id': 2524, 'title': '清华日晷再遭涂刻 基座"CLASS"被刻成"CEASS"', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/02/DFL1BF0F000187VI.html'}
+12
+{'id': 2525, 'title': '被跨省抓捕医生:已做最坏打算 有机会还会写文章', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/01/DFL09K030001899N.html'}
+12
+{'id': 2526, 'title': '新型战略核潜艇改进艇094A型亮相 “龟背”不简单', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://war.163.com/18/0418/09/DFLS1BS2000181KT.html'}
+12
+{'id': 2507, 'title': '这种钱别碰!男子借18万8个月后要还220万差点丢房', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/00/DFKSH26H0001899N.html'}
+12
+{'id': 2508, 'title': '记得汶川地震"敬礼娃娃"吗?他如今为拍摄者扫墓', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/09/DFLOV7F50001875P.html'}
+12
+{'id': 2509, 'title': '国家移民管理局:5月1日起59国人员海南入境游免签', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/10/DFLSJU560001899O.html'}
+12
+{'id': 2510, 'title': '星巴克将关闭全美约8000店面 进行反种族歧视培训', 'time': '2018.04.18  18 : 00', 'classify': '娱乐', 'url': 'http://news.163.com/18/0418/04/DFL832M00001899N.html'}
+12
+{'id': 2511, 'title': '央视记者暗访排污企业遭村里扣押 2名村干部被拘', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/09/DFLOKGTF000187VE.html'}
+12
+{'id': 2512, 'title': '美国前总统老布什妻子去世 享年92岁', 'time': '2018.04.18  18 : 00', 'classify': '股票', 'url': 'http://news.163.com/18/0418/07/DFLKG88R0001899O.html'}
+12
+{'id': 2513, 'title': '凉城警方通报"鸿茅药酒案":严格依法依规开展工作', 'time': '2018.04.18  18 : 00', 'classify': '游戏', 'url': 'http://news.163.com/18/0418/00/DFKQIKHJ0001899O.html'}
+12
+{'id': 2514, 'title': '情侣吵架女方要男友下跪认错 男友:跪了能分手吗?', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/09/DFLPVMUM0001875P.html'}
+12
+{'id': 2515, 'title': '俄罗斯军机引欧洲恐慌 北约军机6天4次紧急升空', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0417/22/DFKLAFTN00018AOR.html'}
+12
+{'id': 2516, 'title': '美国一客机引擎爆炸致1死7伤 乘客险被"吸"出窗外', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/00/DFKSLST30001899N.html'}
+12
+{'id': 2517, 'title': '被跨省抓捕医生将回家 律师:鸿茅药酒派人参与抓捕', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/10/DFLSDNEK0001875P.html'}
+12
+{'id': 2518, 'title': '14岁少年被批评后溺亡 批评者被判赔10万:我不服', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/09/DFLQTLS90001875P.html'}
+12
+{'id': 2519, 'title': '白宫否认特朗普金正恩"直接通话":是最高级别会谈', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/07/DFLJTA7A0001875O.html'}
+12
+{'id': 2520, 'title': '网络传销团伙涉案8000万 花3万聘外国人当"董事长"', 'time': '2018.04.18  18 : 00', 'classify': '科技', 'url': 'http://news.163.com/18/0418/02/DFL2T4S50001899N.html'}
+12
+{'id': 2521, 'title': '避免与大陆军演对垒?台军火炮实弹演习紧急喊停', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/11/DFM1O1VU0001875N.html'}
+12
+{'id': 2522, 'title': '美媒:美国务卿提名人现任CIA局长访朝与金正恩会面', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/08/DFLN8JCT000187VE.html'}
+12
+{'id': 2523, 'title': '奔驰女司机拒检撒泼踹警察 喊话：眼睛别放电！', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0331/16/DE86UJF90001899N.html'}
+12
+{'id': 2524, 'title': '清华日晷再遭涂刻 基座"CLASS"被刻成"CEASS"', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/02/DFL1BF0F000187VI.html'}[18/Apr/2018 18:44:51] "GET /hotNews/?page=2 HTTP/1.1" 200 7644
+[18/Apr/2018 18:45:01] "GET /hotNews/?page=3 HTTP/1.1" 200 8264
+
+12
+{'id': 2525, 'title': '被跨省抓捕医生:已做最坏打算 有机会还会写文章', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/01/DFL09K030001899N.html'}
+12
+{'id': 2526, 'title': '新型战略核潜艇改进艇094A型亮相 “龟背”不简单', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://war.163.com/18/0418/09/DFLS1BS2000181KT.html'}
+12
+{'id': 2507, 'title': '这种钱别碰!男子借18万8个月后要还220万差点丢房', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/00/DFKSH26H0001899N.html'}
+12
+{'id': 2508, 'title': '记得汶川地震"敬礼娃娃"吗?他如今为拍摄者扫墓', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/09/DFLOV7F50001875P.html'}
+12
+{'id': 2509, 'title': '国家移民管理局:5月1日起59国人员海南入境游免签', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/10/DFLSJU560001899O.html'}
+12
+{'id': 2510, 'title': '星巴克将关闭全美约8000店面 进行反种族歧视培训', 'time': '2018.04.18  18 : 00', 'classify': '娱乐', 'url': 'http://news.163.com/18/0418/04/DFL832M00001899N.html'}
+12
+{'id': 2511, 'title': '央视记者暗访排污企业遭村里扣押 2名村干部被拘', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/09/DFLOKGTF000187VE.html'}
+12
+{'id': 2512, 'title': '美国前总统老布什妻子去世 享年92岁', 'time': '2018.04.18  18 : 00', 'classify': '股票', 'url': 'http://news.163.com/18/0418/07/DFLKG88R0001899O.html'}
+12
+{'id': 2513, 'title': '凉城警方通报"鸿茅药酒案":严格依法依规开展工作', 'time': '2018.04.18  18 : 00', 'classify': '游戏', 'url': 'http://news.163.com/18/0418/00/DFKQIKHJ0001899O.html'}
+12
+{'id': 2514, 'title': '情侣吵架女方要男友下跪认错 男友:跪了能分手吗?', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/09/DFLPVMUM0001875P.html'}
+12
+{'id': 2515, 'title': '俄罗斯军机引欧洲恐慌 北约军机6天4次紧急升空', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0417/22/DFKLAFTN00018AOR.html'}
+12
+{'id': 2516, 'title': '美国一客机引擎爆炸致1死7伤 乘客险被"吸"出窗外', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/00/DFKSLST30001899N.html'}
+12
+{'id': 2517, 'title': '被跨省抓捕医生将回家 律师:鸿茅药酒派人参与抓捕', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/10/DFLSDNEK0001875P.html'}
+12
+{'id': 2518, 'title': '14岁少年被批评后溺亡 批评者被判赔10万:我不服', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/09/DFLQTLS90001875P.html'}
+12
+{'id': 2519, 'title': '白宫否认特朗普金正恩"直接通话":是最高级别会谈', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/07/DFLJTA7A0001875O.html'}
+12
+{'id': 2520, 'title': '网络传销团伙涉案8000万 花3万聘外国人当"董事长"', 'time': '2018.04.18  18 : 00', 'classify': '科技', 'url': 'http://news.163.com/18/0418/02/DFL2T4S50001899N.html'}
+12
+{'id': 2521, 'title': '避免与大陆军演对垒?台军火炮实弹演习紧急喊停', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/11/DFM1O1VU0001875N.html'}
+12
+{'id': 2522, 'title': '美媒:美国务卿提名人现任CIA局长访朝与金正恩会面', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/08/DFLN8JCT000187VE.html'}
+12
+{'id': 2523, 'title': '奔驰女司机拒检撒泼踹警察 喊话：眼睛别放电！', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0331/16/DE86UJF90001899N.html'}
+12
+{'id': 2524, 'title': '清华日晷再遭涂刻 基座"CLASS"被刻成"CEASS"', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/02/DFL1BF0F000187VI.html'}
+12
+{'id': 2525, 'title': '被跨省抓捕医生:已做最坏打算 有机会还会写文章', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/01/DFL09K030001899N.html'}
+12
+{'id': 2526, 'title': '新型战略核潜艇改进艇094A型亮相 “龟背”不简单', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://war.163.com/18/0418/09/DFLS1BS2000181KT.html'}
+12
+{'id': 2507, 'title': '这种钱别碰!男子借18万8个月后要还220万差点丢房', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/00/DFKSH26H0001899N.html'}
+12
+{'id': 2508, 'title': '记得汶川地震"敬礼娃娃"吗?他如今为拍摄者扫墓', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/09/DFLOV7F50001875P.html'}
+12
+{'id': 2509, 'title': '国家移民管理局:5月1日起59国人员海南入境游免签', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/10/DFLSJU560001899O.html'}
+12
+{'id': 2510, 'title': '星巴克将关闭全美约8000店面 进行反种族歧视培训', 'time': '2018.04.18  18 : 00', 'classify': '娱乐', 'url': 'http://news.163.com/18/0418/04/DFL832M00001899N.html'}
+12
+{'id': 2511, 'title': '央视记者暗访排污企业遭村里扣押 2名村干部被拘', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/09/DFLOKGTF000187VE.html'}
+12
+{'id': 2512, 'title': '美国前总统老布什妻子去世 享年92岁', 'time': '2018.04.18  18 : 00', 'classify': '股票', 'url': 'http://news.163.com/18/0418/07/DFLKG88R0001899O.html'}
+12
+{'id': 2513, 'title': '凉城警方通报"鸿茅药酒案":严格依法依规开展工作', 'time': '2018.04.18  18 : 00', 'classify': '游戏', 'url': 'http://news.163.com/18/0418/00/DFKQIKHJ0001899O.html'}
+12
+{'id': 2514, 'title': '情侣吵架女方要男友下跪认错 男友:跪了能分手吗?', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/09/DFLPVMUM0001875P.html'}
+12
+{'id': 2515, 'title': '俄罗斯军机引欧洲恐慌 北约军机6天4次紧急升空', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0417/22/DFKLAFTN00018AOR.html'}
+12
+{'id': 2516, 'title': '美国一客机引擎爆炸致1死7伤 乘客险被"吸"出窗外', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/00/DFKSLST30001899N.html'}
+12
+{'id': 2517, 'title': '被跨省抓捕医生将回家 律师:鸿茅药酒派人参与抓捕', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/10/DFLSDNEK0001875P.html'}
+12
+{'id': 2518, 'title': '14岁少年被批评后溺亡 批评者被判赔10万:我不服', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/09/DFLQTLS90001875P.html'}
+12
+{'id': 2519, 'title': '白宫否认特朗普金正恩"直接通话":是最高级别会谈', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/07/DFLJTA7A0001875O.html'}
+12
+{'id': 2520, 'title': '网络传销团伙涉案8000万 花3万聘外国人当"董事长"', 'time': '2018.04.18  18 : 00', 'classify': '科技', 'url': 'http://news.163.com/18/0418/02/DFL2T4S50001899N.html'}
+12
+{'id': 2521, 'title': '避免与大陆军演对垒?台军火炮实弹演习紧急喊停', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/11/DFM1O1VU0001875N.html'}
+12
+{'id': 2522, 'title': '美媒:美国务卿提名人现任CIA局长访朝与金正恩会面', 'time': '2018.04.18  18 : 00', 'classify': '时政', 'url': 'http://news.163.com/18/0418/08/DFLN8JCT000187VE.html'}
+12
+{'id': 2523, 'title': '奔驰女司机拒检撒泼踹警察 喊话：眼睛别放电！', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0331/16/DE86UJF90001899N.html'}
+12
+{'id': 2524, 'title': '清华日晷再遭涂刻 基座"CLASS"被刻成"CEASS"', 'time': '2018.04.18  18 : 00', 'classify': '社会', 'url': 'http://news.163.com/18/0418/02/DFL1BF0F000187VI.html'}[18/Apr/2018 18:45:08] "GET /hotNews/?page=2 HTTP/1.1" 200 7644

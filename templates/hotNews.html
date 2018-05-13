@@ -1,0 +1,86 @@
+{% extends 'aboutUS.html' %}
+{% load static %}
+{% block title %} Hot News{% endblock %}
+{% block mycss %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/hotNews.css' %}">
+{% endblock %}
+{% block banner %}
+<div class="banner" style="background-image: url('{% static '/imgs/banner_hot_news.png' %}')">
+        <div class="top">
+            <div class="logo">NLP</div>
+            <div class="address">陕西·延安</div>
+        </div>
+        <div class="navigationBar1">
+            <div class="Category" style="background-image: url('{% static '/imgs/Category.png' %}')"></div>
+            <div class="nav">
+                <ul>
+                    <li><a href=" {% url 'about' %}">首页</a></li>
+                    <li><a href="{% url 'hot' %}">热点新闻</a></li>
+                    <li><a href="{% url 'article' %}">洞悉文字</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navigationBar2">
+            <div class="nav2_1">
+                <p class="nav_2_1_1">关于我们</p>
+                <p class="nav_2_1_2">人工智能 &nbsp; 让世界更美好</p>
+            </div>
+            <div class="nav2_2">
+                <p class="nav_2_1_1">热点新闻</p>
+                <p class="nav_2_1_2">挖掘潜在价值 &nbsp; 探析内在奥秘</p>
+            </div>
+            <div class="nav2_3">
+                <p class="nav_2_1_1">洞悉文字</p>
+                <p class="nav_2_1_2">洞悉情感世界 &nbsp; 探索语言真谛</p>
+            </div>
+
+        </div>
+
+</div>
+{% endblock %}
+
+{% block window %}
+           <div class="main">
+            <div class="info_info">
+                <div class="main_window_top"><span class="news_title">新闻热点</span> <span class="classify">类别</span><span class="time">时间</span></div>
+                  <ul class="info_list">
+           {% for item in cus_list %}
+            <li class="info_item"><a href="{{ item.url }}">{{ item.title }}</a><span class="info_classify">{{ item.classify }}</span><spam  class="info_time">{{ item.time }}</spam></li>
+               <div class="class" style=width:100%;background-repeat:no-repeat;margin-left:-50px;height:2px;background-image:url("{% static '/imgs/line.png' %}") '></div>
+           {% endfor %}
+           </ul>
+            </div>
+           <div class="pageone">
+            <ul class="pagination">
+
+                    {% if cus_list.has_previous %}
+                    <li class="page">
+                        <a href="?page={{ cus_list.previous_page_number }}" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                {% endif %}
+            {% for pg in cus_list.paginator.page_range %}
+                {% if cus_list.number == pg %}
+                    <li class="active page" >
+                        <a style="color: red;" href="?page={{ pg }}">{{ pg }}</a>
+                    </li>
+                {% else %}
+                        <li class="page"><a href="?page={{ pg }}">{{ pg }}</a></li>
+                {% endif %}
+
+            {% endfor %}
+                {% if cus_list.has_next %}
+
+                    <li class="page" style="margin-left:15px">
+                        <a href="?page={{ cus_list.next_page_number }} " aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                {% endif %}
+
+            </ul>
+           </div>
+
+           </div>
+{% endblock %}

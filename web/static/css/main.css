@@ -1,0 +1,121 @@
+body{
+    margin-top: 0px;
+    background-color: #ebebeb;
+    margin: auto;
+    width: 100%;
+    max-width: 1920px;
+    min-width: 1600px;
+}
+
+.banner{
+    margin: auto;
+    height: 640px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position:center top;
+}
+
+.logo{
+    font-size: 24px;
+    color: white;
+    font-family: Gadugi;
+    margin-left: 2.604%;
+    padding-top: 5px;
+}
+.address{
+    margin-top: -25px;
+    margin-left: 92.7%;
+    font-size: 16px;
+    color: white;
+    font-family: Gadugi;
+}
+
+.Category{
+    margin-top: 25px;
+    margin-left: 2.604%;
+    height: 24px;
+    width: 26px;
+    background-size: 24px 26px;
+}
+.nav{
+    float: left;
+     margin-top: -39px;
+}
+.nav ul li{
+    font-family: 微软雅黑;
+    list-style: none;
+    float: left;
+    color: white;
+    font-size: 22px;
+    margin-left: 70px;
+}
+
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.nav ul li a:hover {
+    color: #c8c8c8;
+}
+
+.navigationBar2{
+    margin-top: 453px;
+    width: 1000px;
+    height: 200px;
+    margin: 453px auto;
+}
+
+.nav2_1{
+    float: left;
+    margin-left: 65px;
+}
+.nav2_2{
+    float: left;
+    margin-left: 132px;
+}
+
+.nav2_3{
+    float: left;
+    margin-left: 117px;
+}
+.nav_2_1_1{
+    font-size: 24px;
+    color: #fff;
+    font-family: 微软雅黑;
+}
+.nav_2_1_2{
+    margin-top: -17px;
+     font-size: 16px;
+    color: #fff;
+    font-family: 黑体;
+}
+.main{
+        margin: 80px auto;
+    height: 640px;
+    width: 91%;
+    background-color: white;
+     box-shadow: 5px 5px 2px 0px rgba(29,42,114,0.15);
+}
+.foot{
+    margin-top: 80px;
+    height: 150px;
+    /*border:1px solid red;*/
+    width: 800px;
+    margin: auto;
+}
+
+
+
+.foot p{
+    text-align: center;
+}
+
+.foot_1{
+    margin-top: 50px;
+text-align: center;
+
+}
+
+.foot_1 a{
+    text-decoration: none;
+}

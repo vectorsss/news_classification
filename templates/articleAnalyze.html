@@ -1,0 +1,89 @@
+{% extends 'aboutUS.html' %}
+{% load static %}
+{% block title %} Article Analyze{% endblock %}
+{% block mycss %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/articleAnalyze.css' %}">
+{% endblock %}
+
+{% block banner %}
+    <div class="banner" style="background-image: url('{% static '/imgs/banner_atricle_analyzie.png' %}')">
+        <div class="top">
+            <div class="logo">NLP</div>
+            <div class="address">陕西·延安</div>
+        </div>
+        <div class="navigationBar1">
+            <div class="Category" style="background-image: url('{% static '/imgs/Category.png' %}')"></div>
+            <div class="nav">
+                <ul>
+
+                    <li><a href=" {% url 'about' %}">首页</a></li>
+                    <li><a href="{% url 'hot' %}">热点新闻</a></li>
+                    <li><a href="{% url 'article' %}">洞悉文字</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navigationBar2">
+            <div class="nav2_1">
+                <p class="nav_2_1_1">关于我们</p>
+                <p class="nav_2_1_2">人工智能 &nbsp; 让世界更美好</p>
+            </div>
+            <div class="nav2_2">
+                <p class="nav_2_1_1">热点新闻</p>
+                <p class="nav_2_1_2">挖掘潜在价值 &nbsp; 探析内在奥秘</p>
+            </div>
+            <div class="nav2_3">
+                <p class="nav_2_1_1">洞悉文字</p>
+                <p class="nav_2_1_2">洞悉情感世界 &nbsp; 探索语言真谛</p>
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}
+
+{% block window %}
+         <div class="main" style="background-image: url('{% static '/imgs/wenzi.png' %}')">
+             <form action="{% url 'getA' %}" method="post" onsubmit="return checkFrom()"  >
+                 <div class="textarea">
+                 <textarea  name="text" id="info_text">
+                     {% if  get_art %}
+                         {{ get_art }}
+                     {% else %}
+                     {{ article }}
+                     {% endif %}
+                 </textarea>
+                 </div>
+                 {% csrf_token %}
+                 <input class="button" VALUE="" type="submit"  id="submit" style="background: url('{% static '/imgs/button.png' %}') ">
+             </form>
+         <div class="chooser">
+             <ul class="chooser_ul">
+                 <li>
+                     <input class="chooser_li" id='chooser1' type="radio" name="radio"  onclick="change_text(1)">范文1
+                     <input class="chooser_li" id='chooser2' type="radio" name="radio"  onclick="change_text(2)">范文2
+                     <input class="chooser_li" id='chooser3' type="radio" name="radio"  onclick="change_text(3)">范文3
+                     <input class="chooser_li" id='chooser4' type="radio" name="radio"  onclick="change_text(4)">范文4
+                     <input class="chooser_li" id='chooser5' type="radio" name="radio"  onclick="change_text(5)">范文5
+                     <input class="chooser_li" id='chooser6' type="radio" name="radio"  onclick="change_text(6)">范文6
+                     <input class="chooser_li" id='chooser7' type="radio" name="radio"  onclick="change_text(7)">范文7
+                 </li>
+             </ul>
+         </div>
+         <div class="tag">
+{#        这里循环输出先调整好#}
+        <ul>
+
+            {% for foo in classify %}
+                <li>{{ foo }}</li>
+            {% endfor %}
+
+
+        </ul>
+        </div>
+         </div>
+
+{% endblock %}
+{% block myjs %}
+    <script src="{% static '/js/articleAnalyze.js'%}">
+    </script>
+{% endblock %}

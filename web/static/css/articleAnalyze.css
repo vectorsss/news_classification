@@ -1,0 +1,55 @@
+
+.main{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+@font-face
+{
+font-family: spFont;
+src: url(../font/fz.TTF);
+}
+
+.textarea{
+    padding-top: 50px;
+}
+textarea{
+    height: 310px;
+    width:86%;
+    margin-left: 7%;
+    resize: none;
+    outline: none;
+    border: none;
+}
+
+.button{
+    height: 31px;
+    width: 112px;
+    border: none;
+    margin-top: 70px;
+    margin-left: 87px;
+}
+
+.tag{
+    margin-top: 235px;
+    margin-left: 135px;
+}
+.tag ul li{
+    list-style: none;
+    float: left;
+    font-size: 30px;
+    margin-left: 25px;
+    font-family: spFont;
+    color: #282c80;
+    font-weight: bold;
+}
+.chooser{
+    list-style:none;
+    width: 900px;
+    margin: -107px auto;
+}
+.chooser_li{
+       margin-left: 50px;
+}
+.chooser_ul{
+        list-style: none;
+}

@@ -1,0 +1,43 @@
+@font-face
+{
+    font-family: spFont;
+    src: url(../font/fz.TTF);
+}
+.main{
+/*box-shadow: 5px 5px 2px 0px rgba(29,42,114,0.15);*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.main_title{
+    width: 74px;
+    height: 57px;
+    /* margin-top: 94px; */
+    padding-top: 14px;
+    margin: auto;
+    text-align: center;
+}
+.team{
+    font-family: spFont;
+    width: 850px;
+    margin: 50px auto;
+    color: #282c80;
+    font-weight: bold;
+    line-height: 28px;
+
+}
+.project{
+    width: 900px;
+    margin: 97px auto;
+
+
+}
+
+.project p{
+    line-height: 28px;
+    font-family: spFont;
+    font-weight: bold;
+    color: #282c80;
+    margin-left: 24%;
+
+}

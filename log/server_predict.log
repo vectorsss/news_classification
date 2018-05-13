@@ -1,0 +1,134 @@
+/root/anaconda3/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+WARNING:tensorflow:From /root/anaconda3/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/base.py:198: retry (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the retry module or similar alternatives.
+WARNING:tensorflow:From /root/anaconda3/lib/python3.6/site-packages/tensorflow/python/util/deprecation.py:497: calling conv1d (from tensorflow.python.ops.nn_ops) with data_format=NHWC is deprecated and will be removed in a future version.
+Instructions for updating:
+`NHWC` for data_format is deprecated, use `NWC` instead
+WARNING:tensorflow:From /home/www/text_classification/text_classification/cnn_model.py:66: softmax_cross_entropy_with_logits (from tensorflow.python.ops.nn_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+
+Future major versions of TensorFlow will allow gradients to flow
+into the labels input on backprop by default.
+
+See tf.nn.softmax_cross_entropy_with_logits_v2.
+
+2018-04-18 15:34:12.524303: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+connect from: ('127.0.0.1', 43628)
+Accept new connection from 127.0.0.1:43628...
+Connection from 127.0.0.1:43628 closed.
+connect from: ('127.0.0.1', 43630)
+Accept new connection from 127.0.0.1:43630...
+Connection from 127.0.0.1:43630 closed.
+connect from: ('127.0.0.1', 43632)
+Accept new connection from 127.0.0.1:43632...
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/root/anaconda3/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/www/text_classification/text_classification/server_predict.py", line 65, in tcplink
+    classified = cnn_model.predict(recvdata.decode('utf-8'))
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 8190-8191: unexpected end of data
+
+connect from: ('127.0.0.1', 43634)
+Accept new connection from 127.0.0.1:43634...
+Connection from 127.0.0.1:43634 closed.
+connect from: ('127.0.0.1', 43636)
+Accept new connection from 127.0.0.1:43636...
+Connection from 127.0.0.1:43636 closed.
+connect from: ('127.0.0.1', 43638)
+Accept new connection from 127.0.0.1:43638...
+Connection from 127.0.0.1:43638 closed.
+connect from: ('127.0.0.1', 43640)
+Accept new connection from 127.0.0.1:43640...
+Connection from 127.0.0.1:43640 closed.
+connect from: ('127.0.0.1', 43642)
+Accept new connection from 127.0.0.1:43642...
+Connection from 127.0.0.1:43642 closed.
+connect from: ('127.0.0.1', 43644)
+Accept new connection from 127.0.0.1:43644...
+Connection from 127.0.0.1:43644 closed.
+connect from: ('127.0.0.1', 43646)
+Accept new connection from 127.0.0.1:43646...
+Connection from 127.0.0.1:43646 closed.
+connect from: ('127.0.0.1', 43648)
+Accept new connection from 127.0.0.1:43648...
+Connection from 127.0.0.1:43648 closed.
+connect from: ('127.0.0.1', 43650)
+Accept new connection from 127.0.0.1:43650...
+Connection from 127.0.0.1:43650 closed.
+connect from: ('127.0.0.1', 43652)
+Accept new connection from 127.0.0.1:43652...
+Connection from 127.0.0.1:43652 closed.
+connect from: ('127.0.0.1', 43654)
+Accept new connection from 127.0.0.1:43654...
+Exception in thread Thread-14:
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/root/anaconda3/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/www/text_classification/text_classification/server_predict.py", line 65, in tcplink
+    classified = cnn_model.predict(recvdata.decode('utf-8'))
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 8190-8191: unexpected end of data
+
+connect from: ('127.0.0.1', 43656)
+Accept new connection from 127.0.0.1:43656...
+Connection from 127.0.0.1:43656 closed.
+connect from: ('127.0.0.1', 43658)
+Accept new connection from 127.0.0.1:43658...
+Exception in thread Thread-16:
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/root/anaconda3/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/www/text_classification/text_classification/server_predict.py", line 65, in tcplink
+    classified = cnn_model.predict(recvdata.decode('utf-8'))
+UnicodeDecodeError: 'utf-8' codec can't decode bytes in position 8190-8191: unexpected end of data
+
+connect from: ('127.0.0.1', 43660)
+Accept new connection from 127.0.0.1:43660...
+Connection from 127.0.0.1:43660 closed.
+connect from: ('127.0.0.1', 43662)
+Accept new connection from 127.0.0.1:43662...
+Connection from 127.0.0.1:43662 closed.
+connect from: ('127.0.0.1', 43664)
+Accept new connection from 127.0.0.1:43664...
+Connection from 127.0.0.1:43664 closed.
+connect from: ('127.0.0.1', 43666)
+Accept new connection from 127.0.0.1:43666...
+connect from: ('127.0.0.1', 43668)
+Accept new connection from 127.0.0.1:43668...
+Connection from 127.0.0.1:43666 closed.
+Connection from 127.0.0.1:43668 closed.
+connect from: ('127.0.0.1', 43670)
+Accept new connection from 127.0.0.1:43670...
+Connection from 127.0.0.1:43670 closed.
+connect from: ('127.0.0.1', 43672)
+Accept new connection from 127.0.0.1:43672...
+Connection from 127.0.0.1:43672 closed.
+connect from: ('127.0.0.1', 43674)
+Accept new connection from 127.0.0.1:43674...
+Connection from 127.0.0.1:43674 closed.
+connect from: ('127.0.0.1', 43676)
+Accept new connection from 127.0.0.1:43676...
+Connection from 127.0.0.1:43676 closed.
+connect from: ('127.0.0.1', 43678)
+Accept new connection from 127.0.0.1:43678...
+Connection from 127.0.0.1:43678 closed.
+connect from: ('127.0.0.1', 43680)
+Accept new connection from 127.0.0.1:43680...
+Connection from 127.0.0.1:43680 closed.
+connect from: ('127.0.0.1', 43728)
+Accept new connection from 127.0.0.1:43728...
+Connection from 127.0.0.1:43728 closed.
+connect from: ('127.0.0.1', 43730)
+Accept new connection from 127.0.0.1:43730...
+Connection from 127.0.0.1:43730 closed.
+connect from: ('127.0.0.1', 43732)
+Accept new connection from 127.0.0.1:43732...
+Connection from 127.0.0.1:43732 closed.

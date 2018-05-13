@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} About Us {% endblock %}</title>
+</head>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery
+/jquery-1.4.min.js"></script>
+<script type="text/javascript">
+    /* 鼠标特效 */
+    var a_idx = 0;
+    jQuery(document).ready(function($) {
+        $("body").click(function(e) {
+            var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+            var $i = $("<span />").text(a[a_idx]);
+            a_idx = (a_idx + 1) % a.length;
+            var x = e.pageX,
+            y = e.pageY;
+            $i.css({
+                "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-weight": "bold",
+                "color": "#FF0000"
+            });
+            $("body").append($i);
+            $i.animate({
+                "top": y - 180,
+                "opacity": 0
+            },
+            1500,
+            function() {
+                $i.remove();
+            });
+        });
+    });
+    </script>
+<link rel="shortcut icon" href="{%static "favicon.ico" %}" />
+
+<link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+{% block mycss %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/aboutUS.css' %}">
+{% endblock %}
+
+<body>
+{% block banner %}
+    <div class="banner" style="background-image: url('{% static '/imgs/banner_about_us.png' %}')">
+        <div class="top">
+            <div class="logo">NLP</div>
+            <div class="address">陕西·延安</div>
+        </div>
+        <div class="navigationBar1">
+            <div class="Category" style="background-image: url('{% static '/imgs/Category.png' %}')"></div>
+            <div class="nav">
+                <ul>
+                    <li><a href=" {% url 'about' %}">首页</a></li>
+                    <li><a href="{% url 'hot' %}">热点新闻</a></li>
+                    <li><a href="{% url 'article' %}">洞悉文字</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navigationBar2">
+            <div class="nav2_1">
+                <p class="nav_2_1_1">关于我们</p>
+                <p class="nav_2_1_2">人工智能 &nbsp; 让世界更美好</p>
+            </div>
+            <div class="nav2_2">
+                <p class="nav_2_1_1">热点新闻</p>
+                <p class="nav_2_1_2">挖掘潜在价值 &nbsp; 探析内在奥秘</p>
+            </div>
+            <div class="nav2_3">
+                <p class="nav_2_1_1">洞悉文字</p>
+                <p class="nav_2_1_2">洞悉情感世界 &nbsp; 探索语言真谛</p>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+<div class="body">
+    {% block window %}
+            <div class="main" style="background-image: url('{% static '/imgs/aboutUS.png' %}')">
+                <div class="main_title">
+                    <p style="padding-top: 15px"><strong>关于我们</strong></p>
+                    <p style="font-size:13px;font-family: 'Times New Roman';"><strong>ABOUT US</strong></p>
+                </div>
+                <div class="team">
+                    <p>团队简介：延安大学三人组是一支由拥有UI、前段、后台开发组等能力的同学组成的创新创业团队，三名同学均来自于延安大学数学与计算机科学学院，我们在专业素养和思想素养上都对自己有着严格的要求。本次参赛目标旨在锻炼自我，培养团队创业精神。</p>
+                    <p>团队意义：发扬延安精神，努力拼搏向上，结合所学知识，进行实践创新，不断储备知识技能，不断丰富人生阅历。</p>
+                </div>
+                <div class="project">
+                    <p>项目简介：关于NLP（自然语言处理）技术的新闻分类系统和文字分析系统项目是为了提高新闻 质量和减少新闻重复率而创立的项目。项目主要技术采用神经网络，其算法具有学习规则简单及强大的学习能力的优点，从而使系统具有良好的稳定性和准确性。系统分为两个子功能——新闻热点和洞悉文字，新闻热点主要为用户提供简单明了的新闻浏览品台，用户按照系统分类来选择当前的热点新闻；洞悉文字做为模型的扩展功能，用户可自行输入文字，系统将会分析出文字的内容分类，并呈现给用户。</p>
+                </div>
+
+            </div>
+    {% endblock %}
+</div>
+
+
+<div class="footer">
+    <div class="foot">
+        <div class="foot_1">
+            <a href="http://www.yau.edu.cn/">延安大学</a> |
+            <a href="http://www.tsinghua.edu.cn/publish/newthu/index.html">清华大学</a> |
+            <a href="http://www.pku.edu.cn/">北京大学</a> |
+            <a href="https://www.harvard.edu/">哈佛大学</a> |
+            <a href="http://www.bell-labs.com/">贝尔实验室</a> |
+            <a href="https://www.yale.edu/">耶鲁大学</a> |
+            <a href="http://www.cas.cn/">中科院</a>
+        </div>
+
+        <p class="foot_2">Copyright © 2018 NLP. All Rights Reserved.</p>
+        <p class="fott_3">延安大学三人组 版权所有</p>
+    </div>
+</div>
+
+</body>
+</html>
+{% block myjs %}
+    <script src="{% static '/js/aboutUS.js'%}"></script>
+{% endblock %}
