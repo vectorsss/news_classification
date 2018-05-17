@@ -1,4 +1,6 @@
 
+基于卷积神经网络的中文文本分类系统
+text_classification_with_cnn
 
 卷积神经网络&&爬虫实现网易新闻自动爬取并分类
 
@@ -81,15 +83,10 @@ sudo apt-get install libapache2-mod-wsgi-py3
 >cd /home/www/text_classification/text_classification && sh startproject.sh
 项目运行日志在./log下
 
-最后本项目使用的THUCNews中文新闻数据集,可以去官网下载。我对数据集进行了整合处理,下载地址见./text_classification/data/cnews/README.md
-关于本项目中模型和爬虫部分,详见./text_classification/README.md
-
-
-代码有问题请直接提issues。
-
-
-部署有疑问请直接联系：
-
-QQ：447600334
-Email：dandanv5@hotmail.com
+- 最后本项目使用的THUCNews中文新闻数据集,可以去官网下载。我对数据集进行了整合处理,下载地址见./text_classification/data/cnews/README.md
+- 关于本项目中模型和爬虫部分,详见./text_classification/README.md
+- 代码有问题请直接提issues
+- 部署有疑问请直接联系：
+- QQ：447600334
+- Email：dandanv5@hotmail.com
 
