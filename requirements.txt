@@ -6,7 +6,7 @@ idna==2.6
 mysql-connector==2.1.6
 pipreqs==0.4.9
 pytz==2018.4
-requests==2.18.4
+requests==2.20.0
 SQLAlchemy==1.2.6
 urllib3==1.24.2
 yarg==0.1.9
