@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50721
 File Encoding         : 65001
 
-Date: 2018-04-18 23:45:19
+Date:UTC+3 2020-05-11 09:01:19 
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -24,6 +24,10 @@ CREATE TABLE `news_classify` (
   `classify` varchar(10) CHARACTER SET utf8 DEFAULT NULL,
   PRIMARY KEY (`classify_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+
+-- insert classified_dictionary
+INSERT INTO `text_classification`.`news_classify` (`classify_id`, `classify`) VALUES ('1', '体育'),('2', '财经'),('3', '房产'),('4','家居'),('5','教育'),('6','科技'),('7','时尚'),('8','时政'),('9','游戏'),('10','娱乐'),('11','股票'),('12','彩票'),('13','社会')
+    ,('14','星座');
 
 -- ----------------------------
 -- Table structure for wangyi_news
