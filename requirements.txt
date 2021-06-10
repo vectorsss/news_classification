@@ -1,6 +1,6 @@
 certifi==2018.1.18
 chardet==3.0.4
-Django==2.2.10
+Django==2.2.24
 docopt==0.6.2
 idna==2.6
 mysql-connector==2.1.6
